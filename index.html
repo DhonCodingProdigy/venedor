@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>venedor</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <section class="section" id="topHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <nav class="nav th-nav justify-content-md-start" id="topNav">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square checklist-icon" viewBox="0 0 16 16">
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                            </svg>
+                            <span><a href="#" class="nav-link th-nav-link text-capitalize">my wishlist (0)</a></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill checklist-icon" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                            </svg>
+                            <span><a href="#" class="nav-link th-nav-link text-capitalize">my account</a></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill checklist-icon" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                            <span><a href="#" class="nav-link th-nav-link text-capitalize">shopping cart</a></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg checklist-icon" viewBox="0 0 16 16">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                            </svg>
+                            <span><a href="#" class="nav-link th-nav-link text-capitalize">checkout</a></span>
+                        </nav>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="th-text text-md-end" id="text1">Welcome visitor you can <a href="#"> login </a> or <a href="#"> create an account</a></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="bottomHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-div">
+                            <div class="circle">
+                                <h1 class="display2 text-capitalize" id="heading"><span class="h1-span">ve</span>nedor</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <select name="currency" id="currencyType">
+                            <span><option value="#">Select Currency</option></span>
+                            <option value="US Dollar">$ US Dollar</option>
+                            <option value="Euro">€ Euro</option>
+                            <option value="British Pound">£ British Pound</option>
+                            <option value="Canadian Dollar">C$ Canadian Dollar</option>
+                        </select>
+                        <select name="language" id="languageType">
+                            <span><option value="#">Select Language</option></span>
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="Mandarin">Mandarin</option>
+                        </select>
+                        <button class="cart-btn">
+                            <input type="button" id="cartBtn" value="0 items(0) - $0.00">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 mt-5">
+                        <nav class="nav bh-nav" id="bhNav">
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">fashion</a>
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">electronics</a>
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">gifts</a>
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">books</a>
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">at home</a>
+                            <a href="#" class="text-uppercase nav-link bh-nav-link">music</a>
+                        </nav>
+                    </div>
+                    <div class="col-6">
+                        <form action="#" class="form" role="search">
+                            <div class="form-floating">
+                                <input type="search" class="form-control me-2" aria-label="Search" id="search" placeholder ="search">
+                                <label for="search">Search For...</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main" id="main">
+        <section class="top-section">
+                <img src="images/venedor banner.jpg" alt="" class="w-100">
+        </section>
+        <section class="promo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 promo-div">
+                        <img src="images/truck card.jpg" alt="truck img" class="img-fluid w-100">
+                    </div>
+                    <div class="col-4 promo-div">
+                        <img src="images/sale card.jpg" alt="sale card img" class="img-fluid w-100">
+                    </div>
+                    <div class="col-4 promo-div">
+                        <img src="images/new arrivals card.jpg" alt="new arrivals img" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="line-div"></div>
+                        <h2 class="latest-h2 text- text-capitalize">latest</h2>
+                        <p class="latest-text">Buy discount item for the latest collections of world brands</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="border-div"></div>
+                    </div>
+                    <div class="row row-cols-4 g-4">
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/braclet card.jpg" class="card-img-top h-100" id="card-img1" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/trench coat card.jpg" class="card-img-top h-100" id="card-img2" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/gloves card.jpg" class="card-img-top h-100" id="card-img3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-dark card-btn text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/sweater card.jpg" class="card-img-top h-100" id="card-img4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="welcomeSection">
+            <div class="container welcome-container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="line-div" id="lineDiv2"></div>
+                        <h2 class="welcome-h2">Welcome to Venedor</h2>
+                        <p class="welcome-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta totam minima voluptatem nostrum laboriosam. Odit deserunt nesciunt libero laudantium natus eum expedita. Harum blanditiis consectetur soluta. Illo autem iure magnam cumque natus, repudiandae expedita tempore aspernatur, obcaecati numquam cum facere, alias deserunt enim. Totam sapiente obcaecati quaerat eligendi laborum iusto esse nihil assumenda similique hic magnam veniam doloribus suscipit alias illo ipsa accusamus deleniti ipsam, tempore saepe, autem molestias amet voluptates necessitatibus? Sunt quidem quam asperiores delectus suscipit, modi possimus. At!</p>
+                        <a href="#" class="theme-link text-capitalize nav-link">buy venedor theme!</a>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/venedor device img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="bestsellersSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="line-div" id="lineDiv2"></div>
+                        <h2 class="bestsellers-h2 text-capitalize">bestsellers</h2>
+                    </div>
+                    <div class="col-4">
+                        <div class="border-div" id="border-div2"></div>
+                    </div>
+                </div>
+                <!-- <div class="row"> -->
+                    <div class="row row-cols-4 g-4">
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/heels card.jpg" class="card-img-top h-100" id="card-img1" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/purse card.jpg" class="card-img-top h-100" id="card-img2" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/dress shoes img.jpg" class="card-img-top h-100" id="card-img3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-dark card-btn text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card img-card">
+                                <img src="images/gold sweater img.jpg" class="card-img-top h-100" id="card-img4" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <a href="#" class="btn btn-dark card-btn-3 text-capitalize">add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </section>
+        <section class="section" id="manufacturersSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="line-div" id="lineDiv2"></div>
+                        <h2 class="manufacturer-h2 text-capitalize">manufacturer</h2>
+                    </div>
+                    <div class="col-4">
+                        <div class="border-div" id="border-div2"></div>
+                    </div>
+                </div>
+                <div class="row row-cols-6 g-4">
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="images/brand logo.jpg" alt="">
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <section class="section" id="topFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="email-h2 text-uppercase">sign up to receive the latest fashion news</h2>
+                    </div>
+                    <div class="col-3">
+                        <form action="email">
+                            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="btn btn-dark top-footer-button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="middleFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                    <h2 class="account-h2 text-capitalize">my account</h2>
+                </div>
+                <div class="row">
+                    <ul class="item-list">
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">my account</a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">personal information</a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">addresses</a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">discount</a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">orders history</a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link account-link text-capitalize">your vouchers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <h2 class="information-h2">information</h2> -->
+        </section>
+    </footer>
+</body>
+</html>

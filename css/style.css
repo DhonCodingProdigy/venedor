@@ -1,0 +1,205 @@
+:root {
+    --th-bg: #f5f6f8;
+    --th-text: #888888;
+    --btn-bg: #eaeceb;
+    --line: #12c1d2;
+    --middle-bg: #434b4d;
+    --font:'Sanchez', serif;
+    --font2:'Arimo', sans-serif;
+}
+
+#topHeader {
+    background-color: var(--th-bg);
+    height: 45px;
+}
+
+.th-text {
+    color: var(--th-text);
+}
+
+#text1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.checklist-icon {
+    margin-top: 12px;
+    color: var(--th-text);
+}
+
+.th-nav-link {
+    padding-left: 4px;
+    color: var(--th-text);
+}
+
+.th-nav {
+    margin-top: 3px;
+}
+
+#heading {
+    font-family: var(--font);
+    padding: 5px;
+    font-size: 37px;
+}
+
+.circle {
+    width: 54px;
+    height: 55px;
+    border-radius: 50%;
+    padding-right: 8px;
+    background-color: #12c1d2;
+}
+
+.h1-span {
+    color: #f5f6f8;
+}
+
+.logo-div {
+    padding-top: 23px;
+}
+
+#currencyType {
+    padding: 8px;
+    margin-top: 36px;
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+}
+
+#languageType {
+    padding: 8px;
+    margin-top: 36px;
+    border-radius: 5px;
+    background-color: var(--btn-bg);
+}
+
+.bh-nav-link {
+    color: black;
+    font-weight: 600;
+}
+
+#search {
+    margin-top: 40px;
+}
+
+.cart-btn {
+    padding: 4px;
+}
+
+.promo-div {
+    margin-top: 35px;
+}
+
+
+.line-div {
+    position: relative;
+    right: 10px;
+    top: 41px;
+    height: 30px;
+    width: 4px;
+    background-color: #12c1d2;
+}
+
+#lineDiv2 {
+    position: relative;
+    top: 39px;
+}
+
+.latest-h2 {
+    font-size: 40px;
+}
+
+.border-div {
+    position: relative;
+    right: 320px;
+    top: 58px;
+    width: 1070px;
+    height: 2px;
+    background-color: #ededed;
+}
+
+.border-div {
+    position: relative;
+    right: 220px;
+    top: 52px;
+    width: 1070px;
+    height: 2px;
+    background-color: #ededed;
+}
+
+.card-btn {
+    margin-top: 39px;
+    margin-left: 65px;
+    
+}
+
+.card-btn-3 {
+    margin-left: 65px;
+}
+
+#card-img1 {
+    margin-top: 7px;
+}
+
+#card-img4 {
+    margin-top: 3px;
+}
+
+.theme-link {
+    color: var(--line)
+}
+
+.welcome-text {
+    margin: 0;
+}
+
+.welcome-h2 {
+    font-family: var(--font2);
+}
+
+.welcome-container {
+    margin-top: 90px;
+}
+
+.welcome-h2 {
+    font-size: 38px;
+}
+
+.img-card {
+    border-style: none;
+}
+
+#topFooter {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #eaeceb;
+}
+
+#email {
+    margin-top: 6px;
+    padding-right: 150px;
+    border: 3px solid yellow;
+    background-color: #eaeceb;
+}
+
+.btn {
+    margin-left: 17px;
+    border-radius: 1px;
+}
+
+#middleFooter {
+    background-color: var(--middle-bg);
+}
+
+.account-h2 {
+    color: white;
+}
+
+.account-link {
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+
